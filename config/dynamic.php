@@ -5,11 +5,8 @@ if(!isset($_SESSION)) {
 use Cake\Http\Session;
 
 function getDBName()
-{
-    echo session_status();
-
-        $__sess= new Session();
-        echo $__sess->check('Config.database_name');
-        
-        return $__sess->read('Config.database_name');
+{   
+    if(!isset($__sess))
+    $__sess = new Session();
+    return $__sess->read('Config.database_name');
 }

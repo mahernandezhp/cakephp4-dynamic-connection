@@ -18,8 +18,8 @@ class CategoriesController extends AppController
      */
     public function index()
     {  
-        $session = $this->getRequest()->getSession(); //get session
-        echo "".$session->read('Config.database_name'); //write name value to session        
+        // $session = $this->getRequest()->getSession(); //get session
+        // echo "".$session->read('Config.database_name'); //write name value to session        
         $categories = $this->paginate($this->Categories);
 
         $this->set(compact('categories'));

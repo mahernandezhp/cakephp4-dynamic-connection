@@ -79,6 +79,13 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                         ['controller' => 'Users', 'action' => 'add', '_full' => true]
                     );?>
 
+
+                    <?=$this->Html->link(
+                        'Categories',
+                        ['controller' => 'Categories', 'action' => 'index', '_full' => true]
+                    );?>  
+                                        
+
                     <?=$this->Html->link(
                         'Login',
                         ['controller' => 'Users', 'action' => 'login', '_full' => true]

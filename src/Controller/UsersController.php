@@ -124,7 +124,7 @@ class UsersController extends AppController
                 ->first();
                 if($user){
                     $session = $this->getRequest()->getSession(); //get session            
-                    $session->write('Config.database_name', 'company_'.$user->company_id); //write name value to session                
+                    $session->write('Config.database_name', 'agronline_'.$user->company_id); //write name value to session                
                 }
             }
 
